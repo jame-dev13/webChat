@@ -9,6 +9,8 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 public record Message(
         @JsonProperty("from")
         String from,
+        @JsonProperty("to")
+        String to,
         @JsonProperty("msg")
         String msg
 ) {}
